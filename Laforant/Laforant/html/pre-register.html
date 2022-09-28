@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/pre-register.css">
+    <script src="./../js/pre-register.js"></script>
+    <title>Pre-Register</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="./../home.html">
+                <img src="./../assets/logo white ver.png" alt="">
+            </a>
+        </div>
+    </header>
+    <div id="content">
+        <div id="agent">
+            <img src="./../assets/sofey-form.png" alt="">
+        </div>
+        <div class="center">
+            <h1>Pre-Register</h1>
+            <form method="post" onsubmit="validate()">
+                <div class="txt">
+                    <input type="text" id="email" >
+                    <span></span>
+                    <label for="email">Email*</label>
+                </div>
+        
+                <div class="txt">
+                    <input type="text" id="username" >
+                    <span></span>
+                    <label for="username">Username*</label>
+                </div>
+        
+                <div class="txt">
+                    <input type="password" id="password" >
+                    <span></span>
+                    <label for="password">Password*</label>
+                </div>
+        
+                <div class="dob">
+                    <label for="dob">Date of Birth*</label>
+                    <input type="date" id="dob" >
+                </div>
+        
+                <div class="opt">
+                    <label for="nationality">Nationality</label>
+                    <select name="" id="nationality">
+                        <option value="" selected>Select</option>
+                        <option value="">Indonesian</option>
+                        <option value="">Japanese</option>
+                        <option value="">Korean</option>
+                        <option value="">Chinese</option>
+                        <option value="">Britain</option>
+                        <option value="">American</option>
+                        <option value="">Other</option>
+                    </select>
+                </div>
+        
+                <div class="agree">
+                    <input type="checkbox" name="" id="agreement" >
+                    <label for="agreement" >I agree to the user terms*</label>
+                </div>
+        
+                <input type="submit" value="Submit">
+                    
+    
+                <!-- <button>Submit</button>             -->
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div id="teks">Support  |   Privacy Notice  |   Term of Service</div>
+    </footer>
+</body>
+</html>

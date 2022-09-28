@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: indigo;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: default;
+    font-size: 16px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+header a{
+    color: white;
+}
+
+
+
+#navbar{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#navbar a{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#dd-item{
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+
+button{
+    position: relative;
+    color: white;
+    background-color: transparent;
+    padding: 20px;
+    border: none;
+}
+
+#dd-menu{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: black;
+}
+
+button:hover #dd-menu{
+    display: flex;
+}
+
+#logo img{
+    width: 50px;
+}
+
+
+#navbar a:hover{
+    border-bottom: rebeccapurple solid 5px;
+    transition: .1s;
+}
+
+#header-1, #header-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+}
+
+#pre-register a{
+    background-color: rebeccapurple;
+    padding: 10px 30px 10px 30px;
+}
+
+#pre-register a:hover{
+    background-color: darkorchid;
+    transition: .5s;
+}
+
+#specs{
+    margin-top: 90px;
+    background-image: url("./../assets/specs\ bg.png");
+    background-size: 100%;
+    height: 555px;
+    /* height: 700px; */
+    background-repeat: no-repeat;
+    /* width: auto;
+    height: auto; */
+    /* background-size: cover;
+    height: 500px; */
+    display: flex;
+    align-items: center;
+}
+
+#specs h1{
+    margin-left: 250px;
+    font-size: 120px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+}
+
+#info{
+    background: url("./../assets/specs-info\ bg.png");
+    background-size: 100%;
+    height: 1000px;
+    background-repeat: no-repeat;
+}
+
+#info h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 48px;
+    padding: 150px 0 0 100px;
+}
+
+table,th,td{
+    width: 85%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 25px;
+}
+
+table img{
+    width: 80px;
+}
+
+#table-1{
+    margin: 70px 0 0 100px;
+}
+
+#table-1 th{
+    border: 1px solid white;
+}
+
+#table-1 th{
+    background-color: black;
+    color: white;
+}
+
+#table-2{
+    padding: 25px;
+    margin-top: 50px;
+    margin-bottom: 290px;
+    margin-left: 100px;
+}
+
+#table-2,th,td{
+    border: 1px solid black;
+}
+
+#table-2 th{
+    background-color: gray;
+    color: white;
+    font-size: 24px;
+}
+
+#table-2 td{
+    background-color: floralwhite;
+}
+
+footer{
+    margin-top: -3px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding: 50px;
+}
+
+footer img{
+    width: 30px;
+    margin: 0 10px 0;
+}
+
+#final{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#copyright{
+    margin-top: 30px;
+}
+
+#p-n, #t-o-s, #c-p{
+    margin: 30px 0 10px 30px;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px){
+    header{
+       width: 100%;
+   }
+   
+   #specs{
+       width: 1425px;
+   }
+
+   #specs h1{
+       font-size: 100px;
+       margin: 0;
+       margin-bottom: 100px;
+       margin-left: 200px;
+   }
+
+   #info{
+       width: 1425px;
+   }
+
+   footer{
+       width: 1325px;
+   }
+}
+
+@media screen and (max-width: 900px){
+    #navbar a{
+        margin: 0;
+    }
+
+    #pre-register{
+        padding: 0;
+    }
+
+    #pre-register a{
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    #specs{
+        width: 1420px;
+    }
+
+    #navbar a,#pre-register a{
+        font-size: 10px;
+    }
+
+    #pre-register{
+        padding: 0;
+    }
+
+    #pre-register a{
+        padding: 10px;
+    }
+
+    footer{
+        width: 1323px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    header{
+        width: 100%;
+    }
+
+    #specs{
+        width: 500px;
+    }
+
+    #navbar a,#pre-register a{
+        font-size: 8px;
+        margin: 0;
+    }
+
+    #pre-register{
+        padding: 0;
+    }
+
+    #pre-register a{
+        padding: 10px;
+    }
+
+    #specs h1{
+        font-size: 50px;
+        margin: 0;
+        margin-bottom: 400px;
+        margin-left: 90px;
+    }
+
+    #info{
+        width: 500px;
+        margin-top: -350px;
+    }
+
+    #info h1{
+        font-size: 30px;
+        margin: 0;
+        padding: 0;
+        padding: 20px;
+    }
+
+    #table-1,#table-2{
+        margin: 0;
+        margin: 20px;
+    }
+
+    #table-1 tr th{
+        padding: 2px;
+        font-size: 10px;
+    }
+
+    #table-1 tr th img{
+        width: 40px;
+    }
+
+    #table-2 tr th,#table-2 tr td{
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    footer{
+        margin-top: 30px;
+        width: 400px;
+        height: max-content;
+    }
+}
